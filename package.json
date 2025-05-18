@@ -1,0 +1,18 @@
+{
+  "name": "jarvischatbot-main",
+  "version": "1.0.0",
+  "description": "Eu criei o Jarvis chatbot, um assistente virtual de IA, assim como Siri, Alexa e Google Assistant. Este projeto utiliza o conceito avançado de JavaScript com a funcionalidade de converter texto em fala e depois usar o método de processamento de linguagem natural. Ou seja, ele \"escuta\", entende o que você está pedindo e fornece o resultado da pesquisa na web.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}

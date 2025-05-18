@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+/* Importa a fonte Press Start 2P, opcional */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Usa Roboto Mono como fonte padrão, pode ajustar */
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    /* Garante que o body ocupa toda a viewport height */
+    min-height: 100vh;
+    background: #000; /* Fundo preto */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Define uma largura máxima para o conteúdo principal */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container {
+    padding: 10px;
+    text-align: center; /* Centraliza texto dentro do container */
+}
+
+.main .image-container .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.main .image-container .image img {
+    width: 100%; /* Imagem responsiva */
+    max-width: 350px; /* Largura máxima para a imagem */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Cantos arredondados para a imagem */
+}
+
+.main .image-container h1 {
+    color: #00bcd4; /* Cor azul ciano */
+    margin-bottom: 10px;
+    font-size: clamp(24px, 5vw, 40px); /* Tamanho de fonte responsivo */
+    /* Opcional: usar a fonte Press Start 2P para o título */
+    /* font-family: 'Press Start 2P', cursive; */
+}
+
+.main .image-container p {
+    color: #aed0d0; /* Cor cinza claro */
+    margin-bottom: 40px;
+    font-size: clamp(14px, 2vw, 18px); /* Tamanho de fonte responsivo */
+}
+
+.main .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%; /* Largura responsiva */
+    max-width: 500px; /* Largura máxima para o input */
+    height: 60px; /* Aumenta a altura para melhor toque */
+    border-radius: 30px; /* Cantos mais arredondados */
+    background: rgb(202 253 255 / 20%); /* Fundo semi-transparente */
+    margin-bottom: 20px; /* Espaço abaixo do input */
+    padding: 0 20px; /* Padding interno */
+    box-shadow: 0 5px 15px rgba(0, 189, 212, 0.3); /* Sombra sutil */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+    border: 1px solid rgba(0, 189, 212, 0.5); /* Borda sutil */
+}
+
+.main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Aumenta o tamanho do ícone */
+    cursor: pointer;
+    color: #00bcd4; /* Cor do ícone */
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.main .input .talk:hover {
+    color: #fff; /* Cor do ícone no hover */
+}
+
+.main .input .content {
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+    color: #aed0d0; /* Cor do texto */
+    font-size: clamp(14px, 2vw, 18px); /* Tamanho de fonte responsivo */
+    margin-left: 15px; /* Espaço à esquerda do texto */
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Esconde o texto que excede o container */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo */
+}
+
+/* Estilos básicos para a área de resultados do Google CSE */
+/* O CSE irá gerar a estrutura HTML, você pode precisar ajustar estes estilos */
+.gcse-searchresults-only {
+    margin-top: 30px;
+    width: 90%; /* Largura responsiva */
+    max-width: 800px; /* Largura máxima */
+}
+
+/* Estilos para elementos específicos dentro do CSE podem ser necessários */
+/* Exemplo (pode variar dependendo da estrutura gerada pelo CSE): */
+/*
+.gsc-control-cse .gsc-table-result {
+    background-color: #1a1a1a;
+    border-color: #333;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.gsc-control-cse .gs-title a {
+    color: #00bcd4;
+    font-size: 18px;
+}
+
+.gsc-control-cse .gs-snippet {
+    color: #aed0d0;
+    font-size: 14px;
+}
+*/
+
+/* Media Queries para responsividade */
+@media (max-width: 600px) {
+    .main .image-container .image img {
+        max-width: 250px;
+    }
+
+    .main .image-container h1 {
+        font-size: 30px;
+    }
+
+    .main .image-container p {
+        font-size: 16px;
+    }
+
+    .main .input {
+        height: 50px;
+        border-radius: 25px;
+        padding: 0 15px;
+    }
+
+    .main .input .talk {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .main .input .content {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
