@@ -107,9 +107,9 @@ Novos exemplos:
 
 "Quem descobriu o Brasil?"
 
-"Quando foi a independência do BrasiL."
+"Quando foi a independência do BrasiL?"
 
-"Quem foi tiradentes"
+"Quem foi tiradentes?"
 
 🔑 Segurança da Chave API
 Este projeto, por ser puramente front-end, não lida com chaves API secretas que precisam ser escondidas. A integração com o Google Custom Search Element usa um ID público (cx) que não compromete a segurança.
