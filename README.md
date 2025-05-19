@@ -1,4 +1,5 @@
 🤖 JARVIS - Seu Assistente Virtual Pessoal
+
 Bem-vindo ao projeto JARVIS, um assistente virtual simples e interativo construído com tecnologias web front-end! Este projeto permite que você interaja com a JARVIS usando comandos de voz para realizar tarefas como abrir sites, pesquisar na web, obter a hora e a data, e agora, responder a perguntas sobre temas sociais e fatos históricos importantes.
 
 
@@ -104,11 +105,11 @@ Novos exemplos:
 
 "Como identificar notícias falsas?"
 
-"Quem descobriu o Brasil?"
+"Descobrimento do Brasil?"
 
-"Quando foi a independência do Brasil?"
+"Indepência do Brasil."
 
-"Quem foi Tiradentes?"
+"Tiradentes"
 
 🔑 Segurança da Chave API
 Este projeto, por ser puramente front-end, não lida com chaves API secretas que precisam ser escondidas. A integração com o Google Custom Search Element usa um ID público (cx) que não compromete a segurança.
