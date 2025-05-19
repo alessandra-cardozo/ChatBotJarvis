@@ -105,11 +105,11 @@ Novos exemplos:
 
 "Como identificar notícias falsas?"
 
-"Descobrimento do Brasil?"
+"Quem descobriu o Brasil?"
 
-"Indepência do Brasil."
+"Quando foi a independência do BrasiL."
 
-"Tiradentes"
+"Quem foi tiradentes"
 
 🔑 Segurança da Chave API
 Este projeto, por ser puramente front-end, não lida com chaves API secretas que precisam ser escondidas. A integração com o Google Custom Search Element usa um ID público (cx) que não compromete a segurança.
